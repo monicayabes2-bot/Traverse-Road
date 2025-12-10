@@ -7,17 +7,6 @@ body {
   line-height: 1.6;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.traverse-footer {
-  margin-top: auto;
-}
-
 
 
 /* === HEADER & NAVIGATION === */
@@ -129,6 +118,7 @@ nav {
   background-color: #2f4f2f;
   color: #fff;
   padding: 2rem 1rem;
+  margin-top: auto;
 }
 
 .footer-content {
@@ -264,26 +254,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .nav-links {
+  nav ul {
     flex-direction: column;
     gap: 10px;
   }
-  
-  .footer-content {
-    flex-direction: column;
-    /*align-items: center;
-    text-align: center;*/
-  }
-
-  .footer-right {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
   .categories {
     grid-template-columns: 1fr; /* stack cards */
   }
@@ -294,4 +268,7 @@ img, iframe {
   height: auto;
 }
 
+  
+
+  
 
