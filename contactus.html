@@ -31,16 +31,16 @@
         <p>We would love to hear from you</p>
 
         <form id="contactForm">
-            <div class="row">
-                <input type="text" placeholder="Name:" required>
-                <input type="email" placeholder="Email:" required>
-            </div>
+           <form action="mailto:TraverseRoad@gmail.com" method="post" enctype="text/plain">
+  <div class="row">
+    <input type="text" name="Name" placeholder="Name:" required>
+    <input type="email" name="Email" placeholder="Email:" required>
+  </div>
+  <input type="text" name="Subject" placeholder="Subject:" class="full">
+  <textarea name="Message" placeholder="Message:" class="full"></textarea>
+  <button type="submit">Submit</button>
+</form>
 
-            <input type="text" placeholder="Subject:" class="full">
-            <textarea placeholder="Message:" class="full"></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
     </section>
 
     <!-- SUCCESS PAGE -->
@@ -93,3 +93,4 @@
 
 </body>
 </html>
+
