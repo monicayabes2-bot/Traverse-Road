@@ -7,6 +7,18 @@ body {
   line-height: 1.6;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.traverse-footer {
+  margin-top: auto;
+}
+
+
 
 /* === HEADER & NAVIGATION === */
 header {
@@ -260,6 +272,18 @@ nav {
     flex-direction: column;
     gap: 10px;
   }
+  
+  .footer-content {
+    flex-direction: column;
+    /*align-items: center;
+    text-align: center;*/
+  }
+
+  .footer-right {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
   .categories {
     grid-template-columns: 1fr; /* stack cards */
   }
@@ -269,4 +293,5 @@ img, iframe {
   max-width: 100%;
   height: auto;
 }
+
 
