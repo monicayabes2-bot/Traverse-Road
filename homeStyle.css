@@ -381,34 +381,10 @@ footer {
   border-radius: 6px;
   border: 2px solid #000000;   /* subtle border around image */
 }
-/* Hide dropdown by default */
-.dropdown-menu {
-  display: none;
-  list-style: none;
-  padding-left: 20px;
-  background-color: #eeffeb;
-}
-
-.dropdown-menu li a {
-  color: #333;
-  padding: 10px 0;
-  display: block;
-  text-decoration: none;
-}
-
-/* Show dropdown only on mobile */
 @media (max-width: 768px) {
-  .nav-links {
+  nav ul {
     flex-direction: column;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown > a::after {
-    content: " ▼";
-    font-size: 0.8rem;
+    gap: 10px;
   }
   .categories {
     grid-template-columns: 1fr; /* stack cards */
@@ -419,4 +395,6 @@ img, iframe {
   max-width: 100%;
   height: auto;
 }
+
+
 
