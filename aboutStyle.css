@@ -252,7 +252,11 @@ nav {
 }
 
 @media (max-width: 768px) {
-  nav ul {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
     flex-direction: column;
     gap: 10px;
   }
@@ -265,3 +269,4 @@ img, iframe {
   max-width: 100%;
   height: auto;
 }
+
